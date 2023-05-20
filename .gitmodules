@@ -1,0 +1,3 @@
+[submodule "extern/TTS"]
+	path = extern/TTS
+	url = ../../coqui-ai/TTS.git
