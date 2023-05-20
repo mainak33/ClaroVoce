@@ -10,9 +10,17 @@ To manually add the submodule in the parent directory (if cloned without the --r
 ```
 git submodule add ../../coqui-ai/TTS.git extern/TTS
 ```
+
+The TTS repo uses the branch main and not the default origin. Use any of the following command to set the default branch for the submodule:
+```
+git submodule set-branch --branch main extern/TTS
+git config -f .gitmodules submodule.extern/TTS.branch main
+```
+
 To pull and update:
 ```
 git pull --recurse-submodules 
 git submodule update --remote
 ```
+
 
