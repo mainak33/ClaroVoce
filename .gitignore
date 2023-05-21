@@ -49,5 +49,5 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-# extern/TTS/**
-# extern/TTS/*.*
+python/*.*
+!python/*.py

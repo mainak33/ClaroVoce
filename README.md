@@ -1,5 +1,10 @@
 # ClaroVoce
 
+## Prerequisites
+CMake version 3.16 or higher
+Python
+
+
 ## Submodules
 This repo uses submodules coqui-ai/TTS.git
 While cloning use the --recurse-submodules flag
@@ -23,4 +28,19 @@ git pull --recurse-submodules
 git submodule update --remote
 ```
 
-
+#Python venv and install
+It is recommended to install TTS inside a venv
+```
+python -m venv <path to venv>
+cd <path to venv>
+pip install TTS
+pip install -e <path to repo>/extern/TTS
+```
+To activate the venv on bash:
+```
+source <path to venv>/bin/activate
+```
+To create an example wav file in the venv:
+```
+python3 <path to repo>testTTS.py
+```
