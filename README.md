@@ -42,5 +42,5 @@ source <path to venv>/bin/activate
 ```
 To create an example wav file in the venv:
 ```
-python3 <path to repo>testTTS.py
+python3 <path to repo> testTTS.py
 ```
